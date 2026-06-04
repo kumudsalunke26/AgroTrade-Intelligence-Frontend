@@ -14,6 +14,7 @@ export default function Navbar() {
         <Link to="/prediction" className="hover:text-green-700 transition">Prediction</Link>
         <Link to="/profit" className="hover:text-green-700 transition">Profit</Link>
         <Link to="/season" className="hover:text-green-700 transition">Seasonal</Link>
+
         <Link to="/about" className="hover:text-green-700 transition">About Us</Link>
         <Link
           to="/login"

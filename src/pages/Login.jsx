@@ -132,7 +132,7 @@ const Login = () => {
 
       console.log(userCredential.user);
 
-      navigate("/");
+      navigate("/dashboard");
 
     } catch (error) {
       alert(error.message);
