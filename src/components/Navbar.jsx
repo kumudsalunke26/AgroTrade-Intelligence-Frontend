@@ -5,7 +5,7 @@ export default function Navbar() {
     <nav className="bg-white shadow-md px-10 py-4 flex justify-between items-center">
 
       <h1 className="text-2xl font-bold text-green-700 tracking-wide">
-        🌾 AgroTrade
+        🌾 AgroTrade AI
       </h1>
 
       <div className="space-x-8 text-gray-700 font-medium">
