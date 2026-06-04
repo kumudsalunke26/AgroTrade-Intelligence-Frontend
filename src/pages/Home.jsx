@@ -209,14 +209,14 @@
 // }
 
 import { Link } from "react-router-dom";
-import homeBg from "../assets/home.jpeg";
+import homebg1 from "../assets/homebg1.jpeg";
 
 export default function Home() {
   return (
     <div
       className="min-h-screen bg-cover bg-center relative"
       style={{
-        backgroundImage: `url(${homeBg})`
+        backgroundImage: `url(${homebg1})`
       }}
     >
       {/* Dark overlay */}
@@ -301,7 +301,7 @@ export default function Home() {
         </div>
 
         {/* Info Section */}
-        <div className="bg-white/90 py-16 px-6 text-center">
+        <div className="bg-white/90 py-12 px-6 text-center">
           <h2 className="text-3xl font-bold text-green-800 mb-4">
             Why AgroTrade AI?
           </h2>
