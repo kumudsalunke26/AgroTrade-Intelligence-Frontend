@@ -245,7 +245,7 @@
 import React, { useState } from "react";
 
 // 👇 import your new image
-import profitBg from "../assets/profitfinal.jpeg";
+import pbg1 from "../assets/pbg1.jpeg";
 
 export default function ProfitAnalysis() {
   const [form, setForm] = useState({
@@ -266,7 +266,7 @@ export default function ProfitAnalysis() {
 
   const handleCalculate = async () => {
     try {
-      const res = await fetch("http://127.0.0.1:5000/predict", {
+      const res = await fetch("https://agrotrade-backend-1.onrender.com/predict", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -300,7 +300,7 @@ export default function ProfitAnalysis() {
     <div
       className="min-h-screen flex items-center justify-center bg-cover bg-center relative"
       style={{
-        backgroundImage: `url(${profitBg})`
+        backgroundImage: `url(${pbg1})`
       }}
     >
       {/* 🔲 Dark overlay */}

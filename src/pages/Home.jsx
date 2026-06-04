@@ -226,9 +226,9 @@ export default function Home() {
 
         {/* Hero Section */}
         <div className="text-center py-28 px-6">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            Smart Agriculture <br />
-            <span className="text-green-300">Powered by AI</span>
+          <h1 className="text-3xl md:text-5xl font-semibold text-white mb-6 leading-tight">
+            AgroTrade AI – Agricultural Market Intelligence Platform 🌾🤖<br />
+
           </h1>
 
           <p className="text-lg text-gray-200 max-w-2xl mx-auto mb-10">
@@ -269,9 +269,23 @@ export default function Home() {
               desc: "Choose crops based on seasonal data"
             }
           ].map((item, index) => (
+            // <div
+            //   key={index}
+            //   className="bg-white/90 p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 text-center"
+            // >
+            //   <div className="text-3xl mb-3">{item.icon}</div>
+
+            //   <h3 className="font-semibold text-lg text-green-800 mb-2">
+            //     {item.title}
+            //   </h3>
+
+            //   <p className="text-gray-600 text-sm">
+            //     {item.desc}
+            //   </p>
+            // </div>
             <div
               key={index}
-              className="bg-white/90 p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 text-center"
+              className="bg-white/90 p-6 rounded-xl shadow-lg hover:shadow-[0_20px_40px_rgba(34,197,94,0.35)] hover:border-green-500 border border-transparent transition-all duration-300 transform hover:-translate-y-2 cursor-pointer text-center"
             >
               <div className="text-3xl mb-3">{item.icon}</div>
 
@@ -289,20 +303,20 @@ export default function Home() {
         {/* Info Section */}
         <div className="bg-white/90 py-16 px-6 text-center">
           <h2 className="text-3xl font-bold text-green-800 mb-4">
-            Why AgroTrade?
+            Why AgroTrade AI?
           </h2>
 
-          <p className="text-gray-600 max-w-3xl mx-auto">
-            AgroTrade combines agriculture with artificial intelligence to help farmers
-            make smarter decisions. From predicting prices to analyzing seasonal trends,
-            our platform ensures better planning, reduced risk, and increased profits.
+          <p className="text-lime-900 max-w-3xl mx-auto">
+            
+
+AgroTrade AI is an intelligent agricultural market intelligence platform designed to support farmers with AI-powered crop price prediction, profit optimization, price trend analysis, and seasonal insights. By turning complex agricultural data into clear and actionable information, AgroTrade AI helps farmers make smarter, more profitable decisions.s.
           </p>
         </div>
 
         {/* CTA Section (button removed) */}
         <div className="text-center py-16">
           <h2 className="text-2xl font-semibold text-white">
-            Start making smarter farming decisions today
+            Smarter Insights. Better Planning. Higher Profits. 🌾🤖💰
           </h2>
         </div>
 

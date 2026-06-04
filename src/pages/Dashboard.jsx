@@ -173,7 +173,7 @@ export default function Dashboard() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/dashboard")
+    fetch("https://agrotrade-backend-1.onrender.com/dashboard")
       .then(res => res.json())
       .then(resData => setData(resData))
       .catch(err => console.error(err));
@@ -193,9 +193,15 @@ export default function Dashboard() {
       <div className="relative">
 
         {/* Title */}
-        <h1 className="text-3xl font-bold text-white mb-8">
-          Crop Analytics Dashboard
-        </h1>
+<h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+  🌾 AgroTrade Intelligence Hub
+</h1>
+
+<p className="text-lg md:text-xl font-semibold text-white/90 mb-10">
+  Track market trends, compare crop performance, identify profitable opportunities,
+  and make data-driven farming decisions.
+</p>
+
 
         {/* Summary Cards */}
         <div className="grid md:grid-cols-4 gap-6 mb-10">

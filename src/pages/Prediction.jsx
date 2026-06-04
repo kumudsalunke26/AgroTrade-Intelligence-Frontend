@@ -147,7 +147,7 @@
 import { useState } from "react";
 
 // 👇 import your background image
-import priceBg from "../assets/price.jpeg";
+import pbg1 from "../assets/pbg1.jpeg";
 
 export default function Prediction() {
 
@@ -173,7 +173,7 @@ export default function Prediction() {
 
   const handlePredict = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:5000/predict", {
+      const response = await fetch("https://agrotrade-backend-1.onrender.com/predict", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -199,7 +199,7 @@ export default function Prediction() {
     <div
       className="min-h-screen flex items-center justify-center bg-cover bg-center relative"
       style={{
-        backgroundImage: `url(${priceBg})`
+        backgroundImage: `url(${pbg1})`
       }}
     >
       {/* 🔲 Dark overlay */}
