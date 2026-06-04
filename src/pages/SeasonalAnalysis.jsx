@@ -206,13 +206,13 @@ export default function SeasonalAnalysis() {
 
   const chartData = result
     ? [
-        { time: "Past", price: result.average_price },
-        {
-          time: "Present",
-          price: (result.average_price + result.predicted_price) / 2
-        },
-        { time: "Future", price: result.predicted_price }
-      ]
+      { time: "Past", price: result.average_price },
+      {
+        time: "Present",
+        price: (result.average_price + result.predicted_price) / 2
+      },
+      { time: "Future", price: result.predicted_price }
+    ]
     : [];
 
   return (
@@ -232,10 +232,12 @@ export default function SeasonalAnalysis() {
           Seasonal Trend Forecast
         </h1>
 
-        <p className="text-center text-gray-700 mb-6">
-          Analyze seasonal price trends using past and predicted data
+        <p className="text-center text-gray-700 font-semibold">
+          Analyze seasonal price trends using past and predicted data.
         </p>
-
+        <p className="text-md font-medium text-black text-center mb-5">
+          (Analysis is based on historical crop and market data available for the selected season.)
+        </p>
         {/* Dropdown */}
         <select
           value={season}
