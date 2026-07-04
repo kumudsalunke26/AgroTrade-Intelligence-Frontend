@@ -3,11 +3,13 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import Prediction from "./pages/Prediction";
-import ProfitAnalysis from "./pages/ProfitAnalysis";
+
 import SeasonalAnalysis from "./pages/SeasonalAnalysis";
 import About from "./pages/About";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import MarketComparison from "./pages/MarketComparison";
+import CropRecommendation from "./pages/CropRecommendation";
 
 function App() {
   return (
@@ -17,7 +19,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/prediction" element={<Prediction />} />
-        <Route path="/profit" element={<ProfitAnalysis />} />
+        <Route path="/market-comparison" element={<MarketComparison />}/>
+        <Route path="/crop-recommendation" element={<CropRecommendation />}/>
         <Route path="/season" element={<SeasonalAnalysis />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />

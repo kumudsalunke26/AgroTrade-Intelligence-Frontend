@@ -12,7 +12,8 @@ export default function Navbar() {
         <Link to="/" className="hover:text-green-700 transition">Home</Link>
         <Link to="/dashboard" className="hover:text-green-700 transition">Dashboard</Link>
         <Link to="/prediction" className="hover:text-green-700 transition">Prediction</Link>
-        <Link to="/profit" className="hover:text-green-700 transition">Profit</Link>
+        <Link to="/market-comparison" className="hover:text-green-700 transition">Market Comparison</Link>
+        <Link to="/crop-recommendation" className="hover:text-green-700 transition">Crop Recommendation</Link>
         <Link to="/season" className="hover:text-green-700 transition">Seasonal</Link>
 
         <Link to="/about" className="hover:text-green-700 transition">About Us</Link>
