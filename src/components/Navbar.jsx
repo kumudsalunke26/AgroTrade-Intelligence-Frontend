@@ -11,10 +11,10 @@ export default function Navbar() {
       <div className="space-x-8 text-gray-700 font-medium">
         <Link to="/" className="hover:text-green-700 transition">Home</Link>
         <Link to="/dashboard" className="hover:text-green-700 transition">Dashboard</Link>
-        <Link to="/prediction" className="hover:text-green-700 transition">Prediction</Link>
+        <Link to="/prediction" className="hover:text-green-700 transition">Price Prediction</Link>
         <Link to="/market-comparison" className="hover:text-green-700 transition">Market Comparison</Link>
         <Link to="/crop-recommendation" className="hover:text-green-700 transition">Crop Recommendation</Link>
-        <Link to="/season" className="hover:text-green-700 transition">Seasonal</Link>
+        <Link to="/season" className="hover:text-green-700 transition">Seasonal Analysis</Link>
 
         <Link to="/about" className="hover:text-green-700 transition">About Us</Link>
         <Link
