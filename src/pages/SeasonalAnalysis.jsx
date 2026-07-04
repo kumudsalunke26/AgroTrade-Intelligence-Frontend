@@ -351,7 +351,7 @@ export default function SeasonalAnalysis() {
     if (!selectedSeason || selectedSeason === "Select Season") return;
 
     try {
-      const res = await fetch("http://127.0.0.1:5000/seasonal-analysis", {
+      const res = await fetch("https://agrotrade-intelligence-backend.onrender.com/seasonal-analysis", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

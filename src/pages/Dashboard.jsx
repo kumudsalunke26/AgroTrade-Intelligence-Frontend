@@ -351,7 +351,7 @@ export default function Dashboard() {
  
 
   useEffect(() => {
-  fetch("http://127.0.0.1:5000/dashboard")
+  fetch("https://agrotrade-intelligence-backend.onrender.com/dashboard")
     .then(res => res.json())
     .then(resData => {
       console.log("DASHBOARD DATA:", resData); // 👈 ADD THIS

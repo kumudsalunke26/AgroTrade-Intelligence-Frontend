@@ -346,7 +346,7 @@ import pbg1 from "../assets/pbg1.jpeg";
 
 export default function Prediction() {
 
-  const API = "http://127.0.0.1:5000";
+  const API = "https://agrotrade-intelligence-backend.onrender.com/";
 
   const [formData, setFormData] = useState({
     crop: "",

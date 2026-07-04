@@ -18,7 +18,7 @@ export default function CropRecommendation() {
 
   useEffect(() => {
 
-    fetch("http://127.0.0.1:5000/markets")
+    fetch("https://agrotrade-intelligence-backend.onrender.com/markets")
       .then(res => res.json())
       .then(data => setMarkets(data))
       .catch(err => console.log(err));
@@ -41,7 +41,7 @@ export default function CropRecommendation() {
     try {
 
       const res = await fetch(
-        "http://127.0.0.1:5000/crop-recommendation",
+        "https://agrotrade-intelligence-backend.onrender.com/crop-recommendation",
         {
           method: "POST",
 

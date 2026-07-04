@@ -36,7 +36,7 @@ export default function MarketComparison() {
         try {
 
             const res = await fetch(
-                "http://127.0.0.1:5000/market-comparison",
+                "https://agrotrade-intelligence-backend.onrender.com/market-comparison",
                 {
                     method: "POST",
                     headers: {
