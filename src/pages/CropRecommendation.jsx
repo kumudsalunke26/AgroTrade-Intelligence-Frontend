@@ -12,9 +12,7 @@ export default function CropRecommendation() {
 
   const [result, setResult] = useState(null);
 
-  // ============================================
-  // LOAD MARKETS
-  // ============================================
+  
 
   useEffect(() => {
 
@@ -25,9 +23,7 @@ export default function CropRecommendation() {
 
   }, []);
 
-  // ============================================
-  // RECOMMENDATION
-  // ============================================
+  
 
   const handleRecommendation = async () => {
 
@@ -73,9 +69,7 @@ export default function CropRecommendation() {
 
   };
 
-  // ============================================
-  // UI
-  // ============================================
+  
 
   return (
 
