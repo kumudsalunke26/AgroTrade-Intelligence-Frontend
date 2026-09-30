@@ -1,108 +1,3 @@
-// // export default function Login() {
-// //   return (
-// //     <div className="min-h-screen flex items-center justify-center bg-gray-100">
-
-// //       <div className="bg-white p-8 rounded-xl shadow w-96">
-
-// //         <h2 className="text-2xl font-bold text-green-700 mb-6 text-center">
-// //           Login / Register
-// //         </h2>
-
-// //         <input
-// //           type="email"
-// //           placeholder="Email"
-// //           className="w-full border p-2 rounded mb-4"
-// //         />
-
-// //         <input
-// //           type="password"
-// //           placeholder="Password"
-// //           className="w-full border p-2 rounded mb-4"
-// //         />
-
-// //         <select className="w-full border p-2 rounded mb-4">
-// //           <option>Select Role</option>
-// //           <option>Farmer</option>
-// //           <option>Admin</option>
-// //         </select>
-
-// //         <button className="w-full bg-green-700 text-white py-2 rounded">
-// //           Login
-// //         </button>
-// //       </div>
-// //     </div>
-// //   );
-// // }
-
-
-
-
-// // import { signInWithEmailAndPassword } from "firebase/auth";
-// // import { auth } from "./firebase";
-
-// // const handleLogin = async (email, password) => {
-// //   try {
-// //     const userCredential = await signInWithEmailAndPassword(auth, email, password);
-// //     console.log("Login successful:", userCredential.user);
-// //   } catch (error) {
-// //     console.error(error.message);
-// //   }
-// // };
-
-
-
-
-// // Login.jsx
-// import React, { useState } from "react";
-// import { auth } from "../firebase";
-// import { signInWithEmailAndPassword } from "firebase/auth";
-
-// const Login = () => {
-//   const [email, setEmail] = useState("");
-//   const [password, setPassword] = useState("");
-
-//   const handleLogin = async (e) => {
-//     e.preventDefault();
-
-//     try {
-//       const userCredential = await signInWithEmailAndPassword(
-//         auth,
-//         email,
-//         password
-//       );
-
-//       console.log(userCredential.user);
-//       alert("Login successful!");
-//     } catch (error) {
-//       alert(error.message);
-//     }
-//   };
-
-//   return (
-//     <div>
-//       <h2>Login</h2>
-//       <form onSubmit={handleLogin}>
-//         <input
-//           type="email"
-//           placeholder="Email"
-//           value={email}
-//           onChange={(e) => setEmail(e.target.value)}
-//         /><br />
-
-//         <input
-//           type="password"
-//           placeholder="Password"
-//           value={password}
-//           onChange={(e) => setPassword(e.target.value)}
-//         /><br />
-
-//         <button type="submit">Login</button>
-//       </form>
-//     </div>
-//   );
-// };
-
-// export default Login;
 
 
 import React, { useState } from "react";
@@ -110,7 +5,7 @@ import { auth } from "../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
-// 👇 import same background image
+/
 import bgImage from "../assets/loginsignup.jpeg";
 
 const Login = () => {
